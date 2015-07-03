@@ -1,4 +1,5 @@
 (function() {
+  'use strict';
   window.HTMLElement = (typeof HTMLElement === 'undefined' && Element) || HTMLElement;
 
   HTMLElement.prototype.on = function(type, listener, useCapture) {
