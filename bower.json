@@ -1,0 +1,16 @@
+{
+  "name": "vanilla",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sergiors/vanilla",
+  "authors": [
+    "Sérgio Rafael Siqueira <sergio@inbep.com.br>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
