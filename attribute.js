@@ -5,13 +5,10 @@
 
   HTMLElement.prototype.getAttributes = function() {
     var attrs = {};
-    var nativeAttrs = this.attributes;
-    var i = 0;
 
-    for (; i < nativeAttrs.length; i++) {
-      var attr = nativeAttrs[i];
+    Array.prototype.map.call(this.attributes, function(attr) {
       attrs[attr.name] = attr.value;
-    }
+    });
 
     return attrs;
   }
@@ -21,8 +18,7 @@
       return;
     }
 
-    var attr;
-    for (attr in attrs) {
+    for (var attr in attrs) {
       this.setAttribute(attr, attrs[attr]);
     }
 
